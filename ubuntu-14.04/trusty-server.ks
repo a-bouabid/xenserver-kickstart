@@ -90,10 +90,10 @@ echo .
 
 # utility scripts
 echo -n "Utility scripts"
-wget -O /opt/domu-hostname.sh https://github.com/a-bouabid/xenserver-kickstart/xenserver-kickstart/opt/domu-hostname.sh
+wget -O /opt/domu-hostname.sh https://github.com/a-bouabid/xenserver-kickstart/opt/domu-hostname.sh
 chmod +x /opt/domu-hostname.sh
 echo .
-wget -O /opt/generate-sshd-keys.sh https://github.com/a-bouabid/xenserver-kickstart/xenserver-kickstart/opt/generate-sshd-keys.sh
+wget -O /opt/generate-sshd-keys.sh https://github.com/a-bouabid/xenserver-kickstart/opt/generate-sshd-keys.sh
 chmod +x /opt/generate-sshd-keys.sh
 echo .
 
