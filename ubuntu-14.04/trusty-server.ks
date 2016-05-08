@@ -9,9 +9,9 @@ install
 url --url http://us.archive.ubuntu.com/ubuntu/
 
 # Language and keyboard setup
-lang en_US
-langsupport en_US
-keyboard us
+lang fr_FR
+langsupport fr_FR
+keyboard fr
 
 # Configure networking without IPv6, firewall off
 
@@ -28,7 +28,7 @@ timezone --utc Etc/UTC
 
 # Authentication
 rootpw --disabled
-user ubuntu --fullname "Ubuntu User" --password Asdfqwerty
+user ubuntu --fullname "Ubuntu User" --password Asdfazerty
 # if you want to preset the root password in a public kickstart file, use SHA512crypt e.g.
 # user ubuntu --fullname "Ubuntu User" --iscrypted --password $6$9dC4m770Q1o$FCOvPxuqc1B22HM21M5WuUfhkiQntzMuAV7MY0qfVcvhwNQ2L86PcnDWfjDd12IFxWtRiTuvO/niB0Q3Xpf2I.
 auth --useshadow
@@ -41,7 +41,7 @@ text
 zerombr yes
 clearpart --all
 part /boot --fstype=ext3 --size=256 --asprimary
-part swap --size 1024
+part swap --size 2048
 part / --fstype=ext4 --grow --size=1024 --asprimary
 bootloader --location=mbr
 
@@ -90,10 +90,10 @@ echo .
 
 # utility scripts
 echo -n "Utility scripts"
-wget -O /opt/domu-hostname.sh https://github.com/frederickding/xenserver-kickstart/raw/develop/opt/domu-hostname.sh
+wget -O /opt/domu-hostname.sh https://github.com/a-bouabid/xenserver-kickstart/xenserver-kickstart/raw/develop/opt/domu-hostname.sh
 chmod +x /opt/domu-hostname.sh
 echo .
-wget -O /opt/generate-sshd-keys.sh https://github.com/frederickding/xenserver-kickstart/raw/develop/opt/generate-sshd-keys.sh
+wget -O /opt/generate-sshd-keys.sh https://github.com/a-bouabid/xenserver-kickstart/xenserver-kickstart/raw/develop/opt/generate-sshd-keys.sh
 chmod +x /opt/generate-sshd-keys.sh
 echo .
 
