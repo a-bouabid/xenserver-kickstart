@@ -1,0 +1,1 @@
+console=hvc0 utf8 nogpt noipv6 ks=https://github.com/frederickding/xenserver-kickstart/raw/develop/ubuntu-14.04/trusty-server.ks
